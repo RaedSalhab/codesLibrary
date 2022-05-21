@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="progressbar.css">
+  <script src="progressbar.js"></script>
   <title>Progressbar</title>
 </head>
 <body>
@@ -22,10 +23,19 @@
   </div>
   <br>
 
-  <!-- Progress bar with animation -->
+  <!-- Progressbar with animation -->
   <div>Progressbar with animation</div>
   <div class="progressbar">
-    <div id="animated"></div>
+    <div id="animate"></div>
   </div>
+  <br>
+
+  <!-- Progressbar animated by JavaScript -->
+  <div>Progressbar animated by JavaScript</div>
+  <button onclick="progressFunc()">Click to start</button>
+  <div class="progressbar">
+    <div id="progress"></div>
+  </div>
+  <br>
 </body>
 </html>

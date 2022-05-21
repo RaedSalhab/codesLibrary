@@ -19,7 +19,7 @@
     to {width: 100%;}
 }
 
-#animated {
+#animate {
     animation-name: progressbar;
     animation-duration: 10s;
 }
