@@ -1,0 +1,15 @@
+.progressbar {
+    background-color: #d1ebff;
+    border-radius: 13px;
+    padding: 3px;
+    display: block;
+    width: 300px;
+}
+
+.progressbar>div {
+    background-color: #125488;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: end;
+}
