@@ -13,3 +13,13 @@
     color: white;
     text-align: end;
 }
+
+@keyframes progressbar {
+    from   {width: 0;}
+    to {width: 100%;}
+}
+
+#animated {
+    animation-name: progressbar;
+    animation-duration: 10s;
+}
