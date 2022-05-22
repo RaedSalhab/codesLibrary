@@ -21,6 +21,7 @@ header {
     display: grid;
     /* Number of items important */
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     grid-template-rows: 1fr;
     column-gap: 4px;
     padding-right: 16px;
@@ -62,7 +63,6 @@ button:hover {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    
 }
 
 .nav-item>a {
@@ -70,11 +70,6 @@ button:hover {
     color: white;
     font-size: 16px;
     font-weight: bold;
-}
-
-span:hover {
-    text-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.8),
-            -1px -1px 2px 1px rgba(255, 255, 255, 0.8);
 }
 
 .dropdown {
