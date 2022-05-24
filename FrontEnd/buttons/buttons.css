@@ -190,7 +190,7 @@ section {
 
 
 .btn-circle {
-    padding: 16px 20px 16px 20px;
+    padding: 14px 24px 14px 24px;
     border-radius: 50%;
     font-size: 24px;
 }
@@ -206,7 +206,7 @@ section {
     height: 40px;
     display: grid;
     place-items: center;
-    border: 2px solid rgb(50, 50, 50);
+    border: 1px solid rgb(50, 50, 50);
     border-radius: 4px;
     padding: 8px;
     cursor: pointer;
@@ -229,7 +229,7 @@ section {
     height: 40px;
     display: grid;
     place-items: center;
-    border: 2px solid rgb(250, 250, 250);
+    border: 1px solid rgb(250, 250, 250);
     border-radius: 4px;
     padding: 8px;
     cursor: pointer;
@@ -245,4 +245,54 @@ section {
 .btn-menu:hover, .btn-menu:hover>div {
     box-shadow: 1px 1px 2px 1px rgba(250, 250, 250, 0.4),
     -1px -1px 2px 1px rgba(250, 250, 250, 0.4);
+}
+
+.btn-list-dark {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn-list-dark>div {
+    height: 8px;
+    width: 8px;
+    border-radius: 2px;
+    background-color: rgb(50, 50, 50);
+}
+
+.btn-list-dark:hover,
+.btn-list-dark:hover>div {
+    box-shadow: 1px 1px 2px 1px rgba(50, 50, 50, 0.4),
+        -1px -1px 2px 1px rgba(50, 50, 50, 0.4);
+}
+
+.btn-list {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn-list>div {
+    height: 8px;
+    width: 8px;
+    border-radius: 2px;
+    background-color: rgb(250, 250, 250);
+}
+
+.btn-list:hover,
+.btn-list:hover>div {
+    box-shadow: 1px 1px 2px 1px rgba(250, 250, 250, 0.4),
+        -1px -1px 2px 1px rgba(250, 250, 250, 0.4);
 }
