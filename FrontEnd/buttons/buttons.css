@@ -27,6 +27,8 @@ section {
 }
 
 
+
+
 .btn-light {
     background-color: white;
     color: black;
@@ -35,6 +37,10 @@ section {
 .btn:active,.btn:visited,
 .btn-light:active,.btn-light:visited {
     color: black;
+}
+
+.btn-light:hover {
+    text-decoration: underline;
 }
 
 .btn-dark {
