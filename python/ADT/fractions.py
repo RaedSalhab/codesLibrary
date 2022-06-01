@@ -1,4 +1,4 @@
-"""The source of this code from Problem Solving with Algorithms and
+"""This code for solving programming exercises 38 + 39 pages Problem Solving with Algorithms and
 Data Structures book for Brad Miller, David Ranum,"""
 
 def gcd(m,n):
@@ -35,6 +35,11 @@ class Fraction():
 
     def __sub__(self, other):
         new_num = self.num * other.den - self.den * other.num
+        new_den = self.den * other.den
+        return Fraction(new_num, new_den)
+
+    def __mul__(self, other):
+        new_num = self.num * other.num
         new_den = self.den * other.den
         return Fraction(new_num, new_den)
 
