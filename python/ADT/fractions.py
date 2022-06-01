@@ -82,6 +82,12 @@ class Fraction():
 
         return first_num <= second_num
 
+    def __ne__(self, other):
+        first_num = self.num * other.den
+        second_num = other.num * self.den
+
+        return first_num != second_num
+
     def get_num(self):
         return self.num
 
