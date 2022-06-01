@@ -18,9 +18,12 @@ class Fraction():
     """
 
     def __init__(self, top, bottom):
-        common = gcd(top, bottom)
-        self.num = top // common
-        self.den = bottom //common
+        if isinstance(top, int) and isinstance(bottom, int):
+            common = gcd(top, bottom)
+            self.num = top // common
+            self.den = bottom //common
+        else:
+            raise TypeError("Only integers are allowed")
 
     def show(self):
         print(self.num, "/", self.den)
