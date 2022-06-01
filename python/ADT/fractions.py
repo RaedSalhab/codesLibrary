@@ -18,8 +18,9 @@ class Fraction():
     """
 
     def __init__(self, top, bottom):
-        self.num = top
-        self.den = bottom
+        common = gcd(top, bottom)
+        self.num = top // common
+        self.den = bottom //common
 
     def show(self):
         print(self.num, "/", self.den)
@@ -30,8 +31,7 @@ class Fraction():
     def __add__(self, other):
         new_num = self.num * other.den + self.den * other.num
         new_den = self.den * other.den
-        common = gcd(new_num, new_den)
-        return Fraction(new_num // common, new_den // common)
+        return Fraction(new_num, new_den)
 
     def __eq__(self, other):
         first_num = self.num * other.den
@@ -39,3 +39,8 @@ class Fraction():
 
         return first_num == second_num
 
+    def get_num(self):
+        return self.num
+
+    def get_den(self):
+        return self.den
