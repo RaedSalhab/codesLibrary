@@ -33,6 +33,11 @@ class Fraction():
         new_den = self.den * other.den
         return Fraction(new_num, new_den)
 
+    def __sub__(self, other):
+        new_num = self.num * other.den - self.den * other.num
+        new_den = self.den * other.den
+        return Fraction(new_num, new_den)
+
     def __eq__(self, other):
         first_num = self.num * other.den
         second_num = other.num * self.den
