@@ -34,6 +34,9 @@ class Fraction():
     def __str__(self):
         return str(self.num) + "/" + str(self.den)
 
+    def __repr__(self):
+        return str(self.num) + "/" + str(self.den)
+
     def __add__(self, other):
         new_num = self.num * other.den + self.den * other.num
         new_den = self.den * other.den
