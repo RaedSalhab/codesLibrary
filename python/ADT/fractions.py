@@ -43,6 +43,10 @@ class Fraction():
     def __radd__(self, other):
         return self.__add__(other)
 
+    def __iadd__(self, other):
+        self = self.__add__(other)
+        return self
+
     def __sub__(self, other):
         new_num = self.num * other.den - self.den * other.num
         new_den = self.den * other.den
