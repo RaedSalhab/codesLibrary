@@ -40,6 +40,9 @@ class Fraction():
 
         return Fraction(new_num, new_den)
 
+    def __radd__(self, other):
+        return self.__add__(other)
+
     def __sub__(self, other):
         new_num = self.num * other.den - self.den * other.num
         new_den = self.den * other.den
