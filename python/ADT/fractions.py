@@ -19,6 +19,9 @@ class Fraction():
 
     def __init__(self, top, bottom):
         if isinstance(top, int) and isinstance(bottom, int):
+            if bottom < 0:
+                bottom *= -1
+                top *= -1
             common = gcd(top, bottom)
             self.num = top // common
             self.den = bottom //common
