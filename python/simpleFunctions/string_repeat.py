@@ -1,11 +1,12 @@
-def repeatStr(string, repeat = 2, seperator = ""):
+def string_repeat(string, repeats = 2, separator = ""):
 
-    """repeatStr function used for repeat a string with number of repeat and 
-    seprator between strings"""
+    """string_repeat function used for repeat a string with number of repeats and 
+    separator between strings
+    """
     final_string = string
-    while repeat > 1:
-        final_string +=  seperator + string
-        repeat -= 1
+    while repeats > 1:
+        final_string +=  separator + string
+        repeats -= 1
 
     return final_string
 
