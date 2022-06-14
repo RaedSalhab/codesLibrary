@@ -1,3 +1,5 @@
+"""This code from Problem Solving with Algorithms and Data Structures book"""
+
 import sys
 sys.path.insert(1, '/home/raed/codesLibrary/python/ADT')
 
