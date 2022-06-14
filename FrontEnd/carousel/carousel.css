@@ -1,18 +1,15 @@
-
-main {
-    margin-top: -8px;
-    margin-left: -8px;
+main{
+    margin: -8px;
 }
 
 .carousel {
-    height: 50vh;
     display: grid;
     place-items: center;
     
 }
 
 img {
-    width: 100vw;
+    width: 100%;
 }
 
 #slide1 {
@@ -25,4 +22,31 @@ img {
 
 #slide3 {
     display: none;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 100px;
+    text-align: center;
+    color: gray;
+    -webkit-user-select: none;
+        /* Safari */
+    user-select: none;
+        /* Standard syntax */
+}
+
+.slide:hover, .arrow:hover {
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: rgb(225, 225, 225);
+}
+
+#prev {
+    left: 16px;
+}
+
+#next {
+    right: 16px;
 }
