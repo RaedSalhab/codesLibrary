@@ -1,15 +1,12 @@
-main{
-    margin: -8px;
-}
 
 .carousel {
     display: grid;
     place-items: center;
-    
+    border-radius: 8px;
 }
 
 img {
-    width: 100%;
+    width: 100vw;
 }
 
 #slide1 {
@@ -44,9 +41,9 @@ img {
 }
 
 #prev {
-    left: 16px;
+    left: 50px;
 }
 
 #next {
-    right: 16px;
+    right: 50px;
 }

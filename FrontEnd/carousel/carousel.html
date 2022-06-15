@@ -8,19 +8,16 @@
   <script src="carousel.js"></script>
   <title>Carousel Slides</title>
 </head>
-<body>
+<body onload="autoSlider();">
   <main>
     <section class="carousel">
-      
-      <a class="slide" onclick="sliding();">
+      <a class="slide" onclick="next();">
         <img id="slide1" src="slide1.png" alt="First slide">
         <img id="slide2" src="slide2.png" alt="Second slide">
         <img id="slide3" src="slide3.png" alt="Third slide">
       </a>
       <a id="prev" class="arrow" onclick="previous();">&#8249;</a>
-      <a id="next" class="arrow" onclick="sliding();">&#8250;</a>
-        
-      
+      <a id="next" class="arrow" onclick="next();">&#8250;</a>
     </section>
   </main>
 </body>
