@@ -1,22 +1,44 @@
 # Completed implementation of a stack ADT
 
 class Stack:
-    
+    """ Stack implementation using a Python list."""
 
     def __init__(self):
-        self.items = []
+        """Create an empty stack"""
+        self._items = []
 
     def is_empty(self):
-        return self.items == []
+        """Return True if the stack is empty."""
+        return len(self._items) == 0
 
     def push(self, item):
-        self.items.append(item)
+        """Add item to the top of the stack."""
+        self._items.append(item)
 
     def pop(self):
-        return self.items.pop()
+        """Return and remove the element at the top of the stack.
+        Raise exception if the stack is empty
+        """
+        if self.is_empty():
+            raise Exception("Stack is empty")
+        return self._items.pop()
 
     def peek(self):
-        return self.items[len(self.items)-1]
+        """Return (but do not remove) the element at the top of the stack.
+        Raise exception if the stack is empty
+        """
+        if self.is_empty():
+            raise Exception("Stack is empty")
+        return self._items[-1]
 
+    def __len__(self):
+        """Return the number of elements in the stack."""
+        return len(self._items)
+    
     def size(self):
-        return len(self.items)
+        """Return the number of elements in the stack."""
+        return len(self._items)
+    
+    def __str__(self):
+        """Return stack as string"""
+        return str(self._items)
