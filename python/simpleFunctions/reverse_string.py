@@ -1,4 +1,5 @@
-from unittest import result
+import sys
+sys.path.insert(1, '/home/raed/codesLibrary/python/ADT')
 from stack import Stack
 
 def rev_string(my_string):

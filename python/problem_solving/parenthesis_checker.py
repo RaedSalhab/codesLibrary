@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(1, '/home/raed/codesLibrary/python/ADT')
 from stack import Stack
 
 def par_checker(symbol_string):
