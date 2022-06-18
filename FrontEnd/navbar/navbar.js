@@ -24,14 +24,3 @@ function redisplay() {
 }
 
 window.addEventListener("resize", redisplay);
-
-function viewDropDownList() {
-    let dropDownList = document.getElementById("dropdown-list");
-    if(droplist == false) {
-        dropDownList.style.display = "block";
-        droplist = true;
-    } else {
-        dropDownList.style.display = "none";
-        droplist = false;
-    }
-}
