@@ -1,6 +1,4 @@
-import sys
-sys.path.insert(1, '/home/raed/codesLibrary/python/ADT')
-from stack import Stack
+from ADT.stack import Stack
 
 def par_checker(symbol_string):
     s = Stack()
@@ -31,8 +29,3 @@ def matches(open, close):
     closes = ")]}"
     return opens.index(open) == closes.index(close)
 
-print(par_checker("()()()"))
-print(par_checker("(()()())"))
-print(par_checker("()(()"))
-print(par_checker("{{([][])}()}"))
-print(par_checker("[{()]"))

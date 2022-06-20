@@ -1,9 +1,6 @@
 """This code from Problem Solving with Algorithms and Data Structures book"""
 
-import sys
-sys.path.insert(1, '/home/raed/codesLibrary/python/ADT')
-
-from stack import Stack
+from ADT.stack import Stack
 
 def infix_to_postfix(infix_expr):
     prec = {}

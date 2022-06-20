@@ -1,9 +1,6 @@
 """This code from Problem Solving with Algorithms and Data Structures book"""
 
-import sys
-sys.path.insert(0, '/home/raed/codesLibrary/python/ADT')
-
-from stack import Stack
+from ADT.stack import Stack
 
 def postfix_eval(postfix_expr):
     operand_stack = Stack()

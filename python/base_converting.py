@@ -1,6 +1,4 @@
-import sys
-sys.path.insert(1, '/home/raed/codesLibrary/python/ADT')
-from stack import Stack
+from ADT.stack import Stack
 
 def base_converter(dec_number, base):
     digits = "0123456789ABCDEF"

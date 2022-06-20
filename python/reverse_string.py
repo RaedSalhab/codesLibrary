@@ -1,8 +1,7 @@
-import sys
-sys.path.insert(1, '/home/raed/codesLibrary/python/ADT')
-from stack import Stack
+from ADT.stack import Stack
 
 def rev_string(my_string):
+    """Reverse string by using stack abstract data type"""
     ch_stack = Stack()
     rev_str = ''
     for ch in my_string:
@@ -13,4 +12,3 @@ def rev_string(my_string):
 
     return rev_str
 
-print(rev_string("Raed Salhab"))
