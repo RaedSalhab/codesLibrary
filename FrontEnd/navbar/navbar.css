@@ -1,14 +1,20 @@
 header {
     position: fixed;
-    display: grid;
-    grid-template-columns: 20% 60%;
-    justify-content: space-around;
-    align-items: center;
     top: 0;
     left: 0;
     width: 100vw;
     height: auto;
     background-color: black;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto 50%;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .brand-area {
@@ -23,7 +29,6 @@ header {
 
 .nav-btn {
     display: none;
-    padding-right: 16px;
 }
 
 button {
@@ -55,25 +60,6 @@ button:hover {
 .btn-menu-light:hover>div {
     box-shadow: 1px 1px 2px 1px rgba(250, 250, 250, 0.4),
         -1px -1px 2px 1px rgba(250, 250, 250, 0.4);
-}
-
-.menu-btn {
-    display: grid;
-    row-gap: 6px;
-    grid-template-columns: auto;
-    border: 2px solid white;
-    border-radius: 4px;
-    padding: 8px;
-}
-
-.menu-btn:hover {
-    box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.8), -1px -1px 2px 1px rgba(255, 255, 255, 0.8);
-}
-
-.menu-btn>div {
-    height: 3px;
-    width: 32px;
-    background-color: white;
 }
 
 .nav-item {
@@ -117,10 +103,22 @@ button:hover {
     font-weight: bold;
 }
 
-@media screen and (max-width: 678px) {
+summary {
+    font-size: 16px;
+}
 
-    header {
-        grid-template-columns: 70% 10%;
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    section {
+            grid-template-columns: auto 65%;
+        }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    section {
+        grid-template-columns: auto auto;
     }
 
     .nav-area {
@@ -128,8 +126,7 @@ button:hover {
     }
 
     .nav-item {
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding: 8px;
     }
 
     .nav-btn {
@@ -146,8 +143,4 @@ button:hover {
         position: relative;
     }
 }
-@media screen and (max-width: 414px) {
-    header {
-            grid-template-columns: 65% 15%;
-        }
-}
+
